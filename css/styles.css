@@ -1,0 +1,34 @@
+/* основний колір  #434455 */
+/* другорядний колір заголовків h3, меню навігаці, лого #2E2F42 */
+/* колір головного заголовка  #FFFFFF */
+/* основний колір фону #FFFFFF */
+/* колір лого "WEB" #4D5AE5 */
+
+:root {
+--color-primary: #434455;
+--color-secondary:#2E2F42;
+--color-background-primary:#FFFFFF;
+--color-logo-primary:#4D5AE5;
+
+/* Скидування стилей списку */
+}
+.list {
+    list-style: none;
+}
+/* Колір для посилань */
+.link:hover,.link:focus {
+    color:var(--color-secondary);
+
+}
+.letter {
+color:var(--color-logo-primary);
+}
+.logo {
+color:var(--color-secondary);
+}
+.address .link {
+    color: var(--color-primary);
+}
+.menu .link:hover,.menu .link:focus{
+color:#000000;
+}
