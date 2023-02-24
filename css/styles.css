@@ -8,27 +8,43 @@
 --color-primary: #434455;
 --color-secondary:#2E2F42;
 --color-background-primary:#FFFFFF;
---color-logo-primary:#4D5AE5;
-
-/* Скидування стилей списку */
+--color-logo-links:#4D5AE5;
+--color-pressed-state:#404BBF;
 }
+
+body {
+    background-color: #ffffff;
+}
+/* Скидування стилей списку */
 .list {
     list-style: none;
 }
-/* Колір для посилань */
-.link:hover,.link:focus {
-    color:var(--color-secondary);
 
-}
-.letter {
-color:var(--color-logo-primary);
-}
-.logo {
-color:var(--color-secondary);
+
+/* Колір для посилань */
+.link{
+    color: var(--color-secondary);
+    text-decoration: none;
 }
 .address .link {
-    color: var(--color-primary);
+color: var(--color-primary);
 }
-.menu .link:hover,.menu .link:focus{
-color:#000000;
+/* Наведення на посилання */
+.link:hover,
+.link:focus {
+    color:var(--color-pressed-state);
 }
+
+/* Колір для лого */
+.letter {
+    color:var(--color-logo-links);
+}
+.logo {
+    color:var(--color-secondary);
+    text-decoration: none;
+}
+
+/* Активний стан 
+.link:active {
+    color: var(--color-pressed-state);;
+}*/
