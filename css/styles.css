@@ -10,10 +10,17 @@
 --color-background-primary:#FFFFFF;
 --color-logo-links:#4D5AE5;
 --color-pressed-state:#404BBF;
+--color-text:#ffffff;
+--color-text-btn:#4D5AE5;
+--color-bgr-btn:#F4F4FD;
+--color-border-btn:#E7E9FC;
 }
 
 body {
 font-family: 'Roboto', sans-serif;
+font-weight: 400;
+background-color:var(--color-background-primary);
+
 }
 /* Скидування стилей списку */
 .list {
@@ -53,7 +60,6 @@ color: var(--color-secondary);
  }
 .contact-link {
 font-style: normal;
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -62,26 +68,34 @@ color: var(--color-primary)
 /* ===========================/ HEADER /================ */
 
 /* ============================HERO===================== */
+.section-hero {
+background-color:var(--color-secondary);
+}
 .hero-title {
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
-/* color: #FFFFFF; */
+color:var(--color-text); 
 }
 .hero-btn {
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-color: #FFFFFF;
+color: var(--color-text);
 width: 169px;
 height: 56px;
-
-background: #4D5AE5;
+cursor: pointer;
+background-color: var(--color-logo-links);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border:none;
+}
+.hero-btn:hover,
+.hero-btn:focus{
+background-color:var(--color-pressed-state);
 }
 /* ============================ / HERO /===================== */
 /* ============================ FEATURES SECTION ============ */
@@ -93,7 +107,6 @@ letter-spacing: 0.02em;
 color: var(--color-secondary);
 }
 .features-subtitle {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -110,7 +123,6 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--color-secondary);
 }
-
 
 /* ============================ / WORK SECTION / ============ */
 
@@ -132,7 +144,6 @@ letter-spacing: 0.02em;
 color: var(--color-secondary);
 }
 .professions-team {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -142,24 +153,102 @@ color: var(--color-primary);
 
 /* ============================ / TEAM SECTION /  ============ */
 /* ============================ FOOTER  ============ */
-.footer {
+.footer-page {
 
-position: absolute;
-width: 1440px;
-height: 310px;
-left: 0px;
-top: 2280px;
-background-color: #2E2F42;
+background-color: var(--color-secondary);
 }
 .copyright {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color: var(--color-border-btn);
+}
+.logo-letter {
+color: var(--color-bgr-btn);
 }
 /* ============================ /FOOTER/  ============ */
 
+/* ======================= PROGECT PORTFOLIO =================*/
+.project-btn {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+border: none;
+letter-spacing: 0.04em;
+border-radius: 4px;
+cursor: pointer;
 
+}
+.project-btn:hover,
+.project-btn:focus {
+background-color: var(--color-pressed-state);
+color: var(--color-text);
+}
 
+.project-btn-all {
+color:var(--color-text);
+width: 69px;
+height: 48px;
+background-color: var(--color-pressed-state);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
+}
+.project-btn-all:hover,
+.project-btn-all:focus {
+background-color: var(--color-logo-links);
+}
+
+.project-btn-site {
+color: var(--color-text-btn);
+width: 116px;
+height: 48px;
+background-color: var(--color-bgr-btn);
+border: 1px solid var(--color-border-btn);
+
+}
+.project-btn-app {
+color:var(--color-text-btn);
+width: 116px;
+height: 48px;
+background-color: var(--color-bgr-btn);
+border: 1px solid var(--color-border-btn);
+
+}
+.project-btn-design {
+color: var(--color-text-btn);
+width: 101px;
+height: 48px;
+background-color: var(--color-bgr-btn);
+border: 1px solid var(--color-border-btn);
+}
+.project-btn-marketing {
+color:var(--color-text-btn);
+width: 126px;
+height: 48px;
+background-color: var(--color-bgr-btn);
+border: 1px solid var(--color-border-btn);
+}
+.portfolio-project-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2px;
+color: var(--color-secondary);
+}
+.portfolio-project-subtitle {
+font-size: 16px;
+line-height: 1.2;
+color: var(--color-primary);
+}
+
+.portfolio-project-title:hover,
+.portfolio-project-title:focus {
+color:var(--color-pressed-state);
+
+}
+.portfolio-project-subtitle:hover,
+.portfolio-project-subtitle:focus {
+color:var(--color-pressed-state); 
+}
+
+/* =======================  /PROGECT PORTFOLIO/ =================*/
