@@ -13,23 +13,19 @@
 }
 
 body {
-    background-color: #ffffff;
+font-family: 'Roboto', sans-serif;
 }
 /* Скидування стилей списку */
 .list {
-    list-style: none;
+list-style: none;
+}
+/* Скидування стилей посилань */
+.link {
+text-decoration: none;
 }
 
+/* ===========================HEADER================ */
 
-/* Колір для посилань */
-.link{
-    color: var(--color-secondary);
-    text-decoration: none;
-}
-.address .link {
-color: var(--color-primary);
-}
-/* Наведення на посилання */
 .link:hover,
 .link:focus {
     color:var(--color-pressed-state);
@@ -40,11 +36,130 @@ color: var(--color-primary);
     color:var(--color-logo-links);
 }
 .logo {
-    color:var(--color-secondary);
-    text-decoration: none;
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+color:var(--color-secondary);
+text-decoration: none;
 }
 
-/* Активний стан 
-.link:active {
-    color: var(--color-pressed-state);;
-}*/
+ .header-link {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-secondary);
+ }
+.contact-link {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-primary)
+}
+/* ===========================/ HEADER /================ */
+
+/* ============================HERO===================== */
+.hero-title {
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+/* color: #FFFFFF; */
+}
+.hero-btn {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+width: 169px;
+height: 56px;
+
+background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border:none;
+}
+/* ============================ / HERO /===================== */
+/* ============================ FEATURES SECTION ============ */
+.features-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--color-secondary);
+}
+.features-subtitle {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-primary);
+}
+/* ============================ /FEATURES SECTION/ ============ */
+
+/* ============================ WORK SECTION ============ */
+.work-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--color-secondary);
+}
+
+
+/* ============================ / WORK SECTION / ============ */
+
+/* ============================ TEAM SECTION ============ */
+.team-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--color-secondary);
+
+}
+.name-employee-team { 
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--color-secondary);
+}
+.professions-team {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-primary);
+
+}
+
+/* ============================ / TEAM SECTION /  ============ */
+/* ============================ FOOTER  ============ */
+.footer {
+
+position: absolute;
+width: 1440px;
+height: 310px;
+left: 0px;
+top: 2280px;
+background-color: #2E2F42;
+}
+.copyright {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+}
+/* ============================ /FOOTER/  ============ */
+
+
+
+
