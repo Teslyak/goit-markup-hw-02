@@ -14,13 +14,13 @@
 --color-text-btn:#4D5AE5;
 --color-bgr-btn:#F4F4FD;
 --color-border-btn:#E7E9FC;
+--color-background-secondary:#F4F4FD;
 }
 
 body {
 font-family: 'Roboto', sans-serif;
-font-weight: 400;
 background-color:var(--color-background-primary);
-
+color: var(--color-primary);
 }
 /* Скидування стилей списку */
 .list {
@@ -127,6 +127,9 @@ color: var(--color-secondary);
 /* ============================ / WORK SECTION / ============ */
 
 /* ============================ TEAM SECTION ============ */
+.section-team {
+background-color:var(--color-background-secondary) ;
+}
 .team-title {
 font-weight: 700;
 font-size: 36px;
@@ -149,6 +152,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-primary);
 
+}
+.employee-team {
+background-color: var(--color-background-primary);
 }
 
 /* ============================ / TEAM SECTION /  ============ */
@@ -174,11 +180,12 @@ font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-border: none;
 letter-spacing: 0.04em;
 border-radius: 4px;
+background-color: var(--color-bgr-btn);
+border: 1px solid var(--color-border-btn);
+color: var(--color-text-btn);
 cursor: pointer;
-
 }
 .project-btn:hover,
 .project-btn:focus {
@@ -186,53 +193,10 @@ background-color: var(--color-pressed-state);
 color: var(--color-text);
 }
 
-.project-btn-all {
-color:var(--color-text);
-width: 69px;
-height: 48px;
-background-color: var(--color-pressed-state);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-}
-.project-btn-all:hover,
-.project-btn-all:focus {
-background-color: var(--color-logo-links);
-}
-
-.project-btn-site {
-color: var(--color-text-btn);
-width: 116px;
-height: 48px;
-background-color: var(--color-bgr-btn);
-border: 1px solid var(--color-border-btn);
-
-}
-.project-btn-app {
-color:var(--color-text-btn);
-width: 116px;
-height: 48px;
-background-color: var(--color-bgr-btn);
-border: 1px solid var(--color-border-btn);
-
-}
-.project-btn-design {
-color: var(--color-text-btn);
-width: 101px;
-height: 48px;
-background-color: var(--color-bgr-btn);
-border: 1px solid var(--color-border-btn);
-}
-.project-btn-marketing {
-color:var(--color-text-btn);
-width: 126px;
-height: 48px;
-background-color: var(--color-bgr-btn);
-border: 1px solid var(--color-border-btn);
-}
 .portfolio-project-title {
 font-weight: 500;
 font-size: 20px;
-line-height: 1.2px;
+line-height: 1.2;
 color: var(--color-secondary);
 }
 .portfolio-project-subtitle {
