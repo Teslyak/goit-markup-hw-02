@@ -22,8 +22,7 @@ font-family: 'Roboto', sans-serif;
 background-color:var(--color-background-primary);
 color: var(--color-primary);
 }
-ul,
-.contacts {
+ul {
 margin-top: 0;
 margin-bottom: 0;
 padding-left: 0;
@@ -145,8 +144,11 @@ margin-bottom: 72px;
 
 /* ============================HERO===================== */
 .section-hero {
+width: 1470px;
+height: 600px;
 background-color:var(--color-secondary);
 }
+
 .hero-title {
 font-weight: 700;
 font-size: 56px;
@@ -192,9 +194,14 @@ letter-spacing: 0.02em;
 color: var(--color-primary);
 }
 .features-list {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    gap: 24px;
 }
+.features-list-item{
+width: calc((100%-72px)/4);
+}
+   
+
 
 /* ============================ /FEATURES SECTION/ ============ */
 
