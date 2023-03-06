@@ -144,9 +144,21 @@ margin-bottom: 72px;
 
 /* ============================HERO===================== */
 .section-hero {
+margin-left: auto;
+margin-right: auto;
 width: 1470px;
 height: 600px;
 background-color:var(--color-secondary);
+}
+.hero-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 600px;   
+}
+.hero-btn{
+margin-top: 48px;
 }
 
 .hero-title {
@@ -155,6 +167,9 @@ font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 color:var(--color-text); 
+width: 496px;
+text-align:center;
+
 }
 .hero-btn {
 font-family: 'Roboto', sans-serif;
@@ -202,7 +217,6 @@ width: calc((100%-72px)/4);
 }
    
 
-
 /* ============================ /FEATURES SECTION/ ============ */
 
 /* ============================ WORK SECTION ============ */
@@ -213,6 +227,16 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--color-secondary);
 }
+.work-title {
+text-align:center;
+}
+
+
+.work-list{
+    display: flex;
+    gap: 24px;
+}
+
 
 /* ============================ / WORK SECTION / ============ */
 
@@ -245,6 +269,13 @@ color: var(--color-primary);
 .employee-team {
 background-color: var(--color-background-primary);
 }
+.team-title{
+text-align: center;
+}
+.team-list {
+    display: flex;
+}
+
 
 /* ============================ / TEAM SECTION /  ============ */
 /* ============================ FOOTER  ============ */
